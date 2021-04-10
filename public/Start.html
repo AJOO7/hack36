@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body id="back">
+    <div id="head-container">
+      <h1
+        style="
+          color: white;
+          position: absolute;
+          left: 40%;
+          top: 2%;
+          font-size: xx-large;
+          font-weight: lighter;
+        "
+      >
+        Faculty Portal
+      </h1>
+    </div>
+    <div class="form-container">
+      <form
+        method="post"
+        enctype="multipart/form-data"
+        action="/attendence"
+        onsubmit="preventdefault()"
+      >
+        <div class="form-icon">
+          <i class="fas fa-chalkboard-teacher fa-3x"></i>
+        </div>
+        <div class="form-icon">
+          <h3>Faculty Login</h3>
+        </div>
+        <div class="form-element">
+          <input
+            name="username"
+            type="text"
+            id="username"
+            class="form-input"
+            placeholder="  Username"
+            required
+          />
+        </div>
+        <div class="form-element">
+          <input
+            name="password"
+            type="password"
+            id="password"
+            class="form-input"
+            placeholder="  Password"
+            required
+          />
+        </div>
+        <div class="form-element">
+          <input
+            name="date"
+            type="date"
+            id="date"
+            class="form-input"
+            required
+          />
+        </div>
+        <div class="form-element">
+          <input
+            name="file"
+            type="file"
+            id="file"
+            class="form-input"
+            required
+            style="background-color: transparent"
+          />
+        </div>
+        <div class="form-element-bttn">
+          <input
+            type="submit"
+            id="submit"
+            class="form-input"
+            onclick="begin()"
+          />
+        </div>
+        <div class="form-bottom">
+          <p>@AJ007 All rights reserved</p>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script>
+    // function getInputValue(e) {
+    //     var input = document.getElementsByTagName("input")[e];
+    //     var label = document.getElementsByTagName("label")[e];
+    //     console.log(input.value);
+    //     if (input.value.toString() != "") {
+    //         label.classList.add("not-empty");
+    //     } else {
+    //         label.classList.remove("not-empty");
+    //     }
+    // }
+  </script>
+</html>
